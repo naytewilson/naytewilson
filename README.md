@@ -1,10 +1,20 @@
-# Nayte — Apple Silicon / Neural Engine systems research
+# Nayte — Native systems, Apple Silicon & autonomous agent research
 
 Independent research into **Apple Neural Engine execution, Core ML compilation, graph placement, and numerical correctness**. I work primarily with native Swift, MIL specifications, ML packages, and controlled measurement on Apple Silicon.
 
 **Research home:** [MacBrains Labs](https://macbrainslabs.org/) · **Methods:** [Experimental approach](https://macbrainslabs.org/methods/) · **Contact:** [research@macbrainslabs.org](mailto:research@macbrainslabs.org)
 
 **ORCID:** [0009-0003-4026-8212](https://orcid.org/0009-0003-4026-8212) · **Citable data:** [ANE Research Records v0.1.0, DOI 10.5281/zenodo.23798037](https://doi.org/10.5281/zenodo.23798037) · **Organization:** [github.com/macbrainslabs](https://github.com/macbrainslabs)
+
+## ANVIL — Agent operating system
+
+<a href="https://github.com/naytewilson/anvil-showcase"><img src="https://raw.githubusercontent.com/naytewilson/anvil-showcase/main/assets/anvil-banner.svg" width="100%" alt="ANVIL — native-first autonomous agent operating system" /></a>
+
+**ANVIL** (**A**gent **N**etwork for **V**erification, **I**ntegration, and **L**ineage) is my native-first systems research project for **accountable autonomous AI agents**. It addresses cross-session identity, distributed work ownership, heterogeneous execution, evidence provenance, recoverability, and the distinction between a passing source test and proven runtime behavior.
+
+The architecture draws on **Swift, PostgreSQL, macOS / Apple Silicon, Linux, and independent verification**. ANVIL is being developed privately; the public project repository documents its engineering objectives and conceptual system boundaries without releasing its implementation or internal operating state.
+
+**[Technical overview](https://github.com/naytewilson/anvil-showcase)** · [Architecture](https://github.com/naytewilson/anvil-showcase/blob/main/docs/ARCHITECTURE.md) · [Evidence and acceptance](https://github.com/naytewilson/anvil-showcase/blob/main/docs/VERIFICATION.md)
 
 ## Selected measurements
 
