@@ -14,7 +14,9 @@ Independent research into **Apple Neural Engine execution, Core ML compilation, 
 
 The architecture draws on **Swift, PostgreSQL, macOS / Apple Silicon, Linux, and independent verification**. ANVIL is being developed privately; the public project repository documents its engineering objectives and conceptual system boundaries without releasing its implementation or internal operating state.
 
-**[Technical overview](https://github.com/naytewilson/anvil-showcase)** · [Architecture](https://github.com/naytewilson/anvil-showcase/blob/main/docs/ARCHITECTURE.md) · [Evidence and acceptance](https://github.com/naytewilson/anvil-showcase/blob/main/docs/VERIFICATION.md)
+**Evidence and publication pipeline:** ANVIL's research infrastructure captures provenance-bound observations, preserves durable evidence receipts, exposes explicit publication-eligibility decisions, and separates scientific review from permission to release. A Swift-native agent sandbox is implemented; purpose-built native prepublication testing and separately signed publishing authority remain under qualification.
+
+**[Technical overview](https://github.com/naytewilson/anvil-showcase)** · [Evidence pipeline](https://github.com/naytewilson/anvil-showcase/blob/main/docs/EVIDENCE_PIPELINE.md) · [Architecture](https://github.com/naytewilson/anvil-showcase/blob/main/docs/ARCHITECTURE.md) · [Verification model](https://github.com/naytewilson/anvil-showcase/blob/main/docs/VERIFICATION.md)
 
 ## Selected measurements
 
