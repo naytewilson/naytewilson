@@ -12,6 +12,7 @@ Each record is a tagged release of [macbrainslabs/ane-research-records](https://
 
 | Version | Record | Scope as published | DOI |
 | --- | --- | --- | --- |
+| v0.4.0 · Nov 2026 | [Published Qwen2.5-1.5B Core ML package: greedy output depends on the compute unit, and cpuOnly returns NaN](https://macbrainslabs.org/research/records/ane-record-10528818ee0e902331b666ee/) | Same chip, single device (Mac17,5, A18 Pro). One published package, one prompt. `cpuAndNeuralEngine` (ANE inferred from compute-plan placement) and `cpuAndGPU` differ from the first generated token; `cpuOnly` prefill logits are all NaN. Correctness unresolved; no novelty claim. 15 of 15 counted runs pass across two clean-room arms | [10.5281/zenodo.24183178](https://doi.org/10.5281/zenodo.24183178) |
 | v0.3.0 · Nov 2026 | [ANERECore cross-repo MIL parity: tap, steer and functionWide](https://macbrainslabs.org/research/records/ane-record-b8f78a146608021d974dcdec/) | Same chip, single device. MIL text byte equality on one Qwen fixture; 10 of 10 counted runs pass across two clean-room arms. No Core ML compile, ANE execution or numerics claimed | [10.5281/zenodo.24034510](https://doi.org/10.5281/zenodo.24034510) |
 | v0.2.0 · Nov 2026 | [LFM3-1.7B layer-14 diagnostic under Core ML `cpuAndNeuralEngine`](https://macbrainslabs.org/research/records/ane-record-c188def1e88a0d94018dfe99/) | Same chip, single device (A18 Pro). ANE execution inferred from compute-plan placement; 8 executions disclosed, 5 counted | [10.5281/zenodo.23905811](https://doi.org/10.5281/zenodo.23905811) |
 | v0.1.0 · Oct 2026 | [Public measurement summaries](https://github.com/macbrainslabs/ane-research-records/releases/tag/v0.1.0) | Baseline archive of derived summary tables, not raw fixtures | [10.5281/zenodo.23798037](https://doi.org/10.5281/zenodo.23798037) |
@@ -28,7 +29,7 @@ The architecture draws on **Swift, PostgreSQL, macOS / Apple Silicon, Linux, and
 
 ### Research publication pipeline
 
-The records above come out of a review and publication pipeline that runs on ANVIL infrastructure. It is in use: v0.2.0 and v0.3.0 were each released only after a final INCLUDE on their exact package hash. A finding moves through it as one hash-identified package that is never edited after submission:
+The records above come out of a review and publication pipeline that runs on ANVIL infrastructure. It is in use: v0.2.0, v0.3.0 and v0.4.0 were each released only after a final INCLUDE on their exact package hash. A finding moves through it as one hash-identified package that is never edited after submission:
 
 1. **Frozen run profiles.** A profile is committed to git and hashed before its first counted run. Every execution goes into an append-only per-device log and is disclosed, passed or failed.
 2. **Independent review.** An evidence reviewer and a skeptical reviewer (pinned AI models) and a deterministic, versioned policy gate check the exact bundle. A split verdict is a hold.
